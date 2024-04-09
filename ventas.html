@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Venta en linea</title>
+</head>
+<body>
+<form method="post" enctype="text/plain">
+<fieldset>
+<legend>Informacion general</legend>
+<table align="center">
+<tr>
+<td>
+<label for="user">Nombre:</label>
+<input type="text" name="user" id="user" size="15" maxlength="20" title="Nombre" placeholder="Nombre">
+</td>
+<td>
+<label for="user">Apellido paterno:</label>
+<input type="text" name="apellido" id="apellido" size="15" maxlength="20" title="Apellido" placeholder="Apellido paterno">
+</td>
+<td>
+<label for="user">Apellido materno:</label>
+<input type="text" name="apellidom" id="apellidom" size="15" maxlength="20" title="Apellido" placeholder="Apellido materno">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="user">Usuario:</label>
+<input type="text" name="user" id="user" size="15" maxlength="20" title="Usuario" placeholder="User">
+</td>
+<td>
+<label for="user">Contraseña:</label>
+<input type="Password" name="pssw" id="pssw" size="20" maxlength="20" title="Contraseña" placeholder="Password">
+</td>
+<td>
+<label for="user">Fecha:</label>
+<input type="date" name="date" id="date" size="20" maxlength="20" title="fecha" placeholder="dd/mm/aaaa">
+</td>
+</tr>
+</table>
+
+<form method="post" enctype="text/plain">
+<fieldset>
+<legend>Datos de envio</legend>
+<table align="center">
+<tr>
+<td>
+<label for="opciones">Pais:</label>
+<select id="opciones" name="opciones">
+<option value="opcion1">Mexico</option>				 <option value="opcion2">USA</option>
+<option value="opcion3">Canada</option>
+<option value="opcion4">Alemania</option>
+</td>
+<td>
+<label for="city">Ciudad:</label>
+<input type="text" name="city" id="city" size="15" maxlength="20" title="Ciudad" placeholder="Ciudad/City">
+</td>
+<td>
+<label for="st">Calle</label>
+<input type="text" name="st" id="street" size="15" maxlength="20" title="Calle" placeholder="Calle">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="house">Num de casa:</label>
+<input type="number" name="house" id="house" size="15" maxlength="20" title="Num de casa" placeholder="Numero">
+</td>
+<td>
+<label for="col">Colonia:</label>
+<input type="text" name="Colonia" id="col" size="15" maxlength="20" title="Calle" placeholder="Colonia">
+</td>
+<td>
+<label for="mail">E-mail:</label>
+<input type="mail" name="mail" id="mail" size="15" maxlength="20" title="Email" placeholder="ej: user@mail.com">
+</td>
+</tr>
+<td>
+<label for="RFC">RFC:</label>
+<input type="number" name="RFC" id="RFC" size="15" maxlength="20" title="RFC" placeholder="RFC">
+</td>
+<td>
+<label for="C.P">Codigo postal:</label>
+<input type="number" name="cp" id="cp" size="15" maxlength="6" title="cp" placeholder="C.P">
+</td>
+<td>
+<button type="submit">Confirmar</button>
+</td>
+<td>
+<button type="reset">Reescribir</button>
+</td>
+</table>
+</form>
+</body>
+</html>
