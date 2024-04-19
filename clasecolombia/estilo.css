@@ -1,0 +1,29 @@
+*{/*formato de la pagina*/
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;/*elimina junto la anterior linea el formato default*/
+	background: orange;
+
+}
+
+.enlace{/*formato para los botones*/
+	display: inline-block;/*permite que se vean horizontalmente*/
+	background: lightsalmon;/*color del boton*/
+	color:green;//color de fuente
+	padding: 20px 30px;
+	shape-margin: 20px;
+	text-decoration: none;
+
+}
+.enlace:hover{/*para cambiar el fondo de los botones*/
+	background: lightcoral ;
+}
+
+nav{/*formato de la barra de navegacion*/
+	background: indianred;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;/*es lo que las separo a l*/
+}
