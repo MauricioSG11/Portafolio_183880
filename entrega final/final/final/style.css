@@ -1,0 +1,293 @@
+*{/*reseteo de todos los estilos por defecto*/
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: arial,sans-serif;
+	box-sizing: border-box;
+	list-style: none;
+	border: none;
+}
+
+#fondo{/*inserta imagen y le da un gradiante oscuro*/
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(fondo.gif);
+	background-repeat: no-repeat;/*no se repite*/
+	background-attachment: fixed;/*permanece fijo*/
+	background-size: cover;/*ocupa todo el div*/
+	background-position: center center;/*la imagen siempre aparce completa*/
+	height: 47em;/*ancho*/
+
+    position: relative;/*le da una posicion de referencia a los demas elementos*/ 
+    display: flex; /*flexbox para organizar mas facil*/ 
+    justify-content: center; /*horizontal*/ 
+    align-items: center;/*vertical*/ 
+    flex-direction: column; /*se alinean verticalemnte*/
+    text-align: center; /*centramos el texto para que se vea simetrico*/ 
+
+    color: white;
+}
+
+
+#menu{
+	display: flex; 
+	justify-content: space-between;/*ultimo y primer elemento se ponenen junto a los bordes izq der*/ 
+	align-items: center;
+
+	margin: 0 auto; 
+	padding: 0 150px; 
+	height: 4em;
+
+	position: fixed;/*hacemos que siempre se visible*/ 
+	width: 100%;/*ancho d toda la pantalla*/
+	background:gray;
+	z-index: 3; /*superponemos el menu encima de todo*/
+}
+
+#logo{
+	color: blue; 
+	font-size: 24px; 
+	font-weight: bold; /*le damos ancho a la fuente del logo*/
+	margin: 0; 
+}
+
+#opciones a{
+	color: blue; 
+	margin-left: 20px;/*espacio entre elementos*/
+}
+
+#opciones a:hover{
+	color: lightblue;/*cambio de color al pasar*/
+}
+
+#info{
+	background-color: lightgray;
+	margin: 2em 10em;/*espaciado del texto*/
+	padding: 5em 3em;
+}
+
+.imagenes{
+	padding: 2em 2em;
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+footer {
+    background-color: gray; 
+    color: white; 
+    padding: 100px; 
+    text-align: center; 
+}
+
+
+
+
+#contform{
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 25em;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+#formulario p{
+	margin: 1em;
+}
+
+#cajaformulario,#cajadatos{
+	margin: 1em;
+}
+
+
+
+#sugerencias{
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	border-radius: 20px;
+	margin: 5em;
+	padding: 3em;
+}
+
+
+
+
+.faq {
+  margin-bottom: 20px;
+}
+
+.question {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+#frecuentes{
+	background-color: lightgray;
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	margin: 3em 7em;
+	border-radius: 20px;
+}
+
+
+.memes{
+  display: flex;
+  width: 100%;
+}
+.memes img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  border-radius: 20px;
+}
+.memes img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+
+
+.video{
+	overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+.video div{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  border-radius: 20px;
+}
+.video div:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(100%);
+}
+
+
+
+
+
+#contiene{
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	margin: 5em;
+	padding: 4em;
+	border-radius: 20px;
+
+}
+
+#red{
+	background-color: lightgray;
+	border-radius: 20px;
+	margin: 5em;
+	padding: 4em;
+	
+
+}
+
+#redes{
+	padding: 30px;
+	display: flex; 
+	justify-content: space-between;/*ultimo y primer elemento se ponenen junto a los bordes izq der*/ 
+}
+
+
+
+
+@media (max-width: 800px){
+		#info{
+			background-color: lightgray;
+			margin: 0;/*espaciado del texto*/
+			padding: 2em 1em;
+		}
+
+		footer {
+	    background-color: gray; 
+	    color: white; 
+	    padding: 20px; 
+	    text-align: center; 
+		}
+
+		#contform{
+			display: flex;
+			justify-content: space-between;
+			margin: 1em 1em;
+			background-color: lightgray;
+			border-radius: 10px;
+		}
+
+
+		#sugerencias{
+			display: flex;
+			flex-direction: column;
+			background-color: lightgray;
+			border-radius: 20px;
+			margin: 1em;
+			padding: 3em;
+		}
+
+
+		#contiene{
+			display: flex;
+			flex-direction: column;
+			background-color: lightgray;
+			margin: 1em;
+			padding: 2em;
+			border-radius: 20px;
+		}
+
+		#frecuentes{
+			background-color: lightgray;
+			padding: 2em;
+			display: flex;
+			flex-direction: column;
+			margin: 3em 1em;
+			border-radius: 20px;
+		}
+
+		 #menu {
+      flex-direction: column; /* Cambiamos la dirección del flujo a columna para adaptarlo */
+      justify-content: center; /* Centramos verticalmente en pantallas pequeñas */
+      align-items: flex-start; /* Alineamos los elementos a la izquierda en pantallas pequeñas */
+      height: auto; /* Permitimos que la altura del menú se ajuste automáticamente */
+      padding: 20px;
+    }
+    #opciones {
+        margin-top: 10px; /* Añadimos un pequeño margen superior entre el logo y las opciones */
+    }
+
+		#red{
+			background-color: lightgray;
+			border-radius: 20px;
+			margin: 1em;
+			padding: 2em;
+			
+
+		}
+
+		#redes{
+			padding: 30px;
+			display: block; 
+			/*ultimo y primer elemento se ponenen junto a los bordes izq der*/ 
+		}
+
+}

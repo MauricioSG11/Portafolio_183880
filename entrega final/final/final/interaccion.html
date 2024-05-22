@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convergencia y gemelos digitales</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="pdf/js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="pdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="pdf/jspdf.js"></script>
+    <script type="text/javascript" src="pdf/jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="pdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+    <script type="text/javascript" src="pdf/jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="pdf/jspdf.plugin.from_html.js"></script>   
+</head>
+<body>
+
+	<script type="text/javascript">
+ var vsid = "si27154f64aae4f";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+ })();
+</script>
+
+	<header>
+		<div id="menu" >
+			<p id="logo">Edxxer</p>
+			<nav id="opciones" >
+				<a style="color:greenyellow;" href="#sugerencias">Sugerencias</a>
+				<a style="color:greenyellow;" href="#cajaformulario">Blog</a>
+				<a style="color:greenyellow;" href="#">Chatbot</a>
+				<a style="color:greenyellow;" href="#contiene">Test</a>
+
+				<a href="index.html">inicio</a>
+				<a href="interaccion.html">interaccion</a>
+				<a href="ayuda.html">ayuda</a>
+				<a href="multimedia.html">multimedia</a>
+
+			</nav>
+		</div>
+	</header>
+
+	<div id="fondo" >
+		<h1>Interaccion</h1><br>
+		<p>Un proyecto web por Mauricio Sierra y Edgar Valerio </p>
+	</div>
+
+
+
+<div id="contform">
+	<section id="cajaformulario">
+		<form  id="formulario" name="formulario">
+			<h2>Blog</h2><br>
+			<p>Clave:<br><input type="text" name="clave" id="clave"></p>
+			<p>Valor:<br><textarea name="text" id="texto"></textarea></p>
+			<p><input type="button" name="grabar" id="grabar" value="Grabar"></p>
+			<p><input type="button" name="eliminar" id="eliminar" value="Borrar datos" onclick="elimina()"></p>
+		</form>
+	</section>
+
+	<section id="cajadatos">
+		Aún no registras información
+	</section>	
+</div><br><br><br><br><br>
+
+
+
+
+<form id="sugerencias" action="https://formsubmit.co/185348@upslp.edu.mx" method="POST" >
+		<h2>Envianos tus sugerencias!!</h2><br>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+
+        <input type="hidden" name="_next" value="https://edgaravalerios.github.io/185348portafolio/proyecto/final/interaccion.html">
+        <input type="hidden" name="_captcha" value="false">
+</form>
+
+
+<div id="contiene">
+    <h1>Test de conocimientos</h1>
+    <h2>Estas listo para ponerte a prueba!?</h2>
+    <div>
+        <form>
+            <ul>
+                    <li> ¿Qué es un gemelo digital?</li>
+                    <input type="radio" name="r1" id="r1" value="5"/> Una réplica virtual en tiempo real de un objeto físico, proceso o sistema.<br/>
+                    <input type="radio" name="r1" id="r1" value="0"/> Una fotografía digital de un objeto.<br/>
+                    <input type="radio" name="r1" id="r1" value="0"/>Un espejo mágico que predice el futuro.<br/><br/>
+
+                    <li>¿Cuál es el propósito principal de un gemelo digital en la industria?</li>
+                    <input type="radio" name="r2" id="r2" value="5"/>Simular, predecir y optimizar el rendimiento de sistemas físicos.<br/>
+                    <input type="radio" name="r2" id="r2" value="0"/>Decorar oficinas con elementos virtuales.<br/>
+                    <input type="radio" name="r2" id="r2" value="0"/>Crear juegos de realidad aumentada para el entretenimiento.<br/><br/>
+
+                    <li> ¿Cómo se crea un gemelo digital?</li>
+                    <input type="radio" name="r3" id="r3" value="5"/>Recopilando datos de sensores y utilizando modelos 3D.<br/>
+                    <input type="radio" name="r3" id="r3" value="0"/>Pintando una copia digital a mano alzada.<br/>
+                    <input type="radio" name="r3" id="r3" value="0"/>Utilizando una máquina del tiempo para viajar al futuro y copiar el objeto.<br/><br/>
+
+                    <li>¿Qué es la convergencia digital?</li>
+                    <input type="radio" name="r4" id="r4" value="5"/>La integración de tecnologías digitales en todas las áreas de una organización.<br/>
+                    <input type="radio" name="r4" id="r4" value="0"/>La convergencia de líneas de tren en una estación central.<br/>
+                    <input type="radio" name="r4" id="r4" value="0"/> Un fenómeno astronómico donde varios planetas parecen alinearse.<br/><br/>
+
+                    <li>¿Cómo pueden las empresas adaptarse a la convergencia digital?</li>
+                    <input type="radio" name="r5" id="r5" value="5"/> Invertir en tecnologías innovadoras y fomentar una cultura de cambio y aprendizaje.<br/>
+                    <input type="radio" name="r5" id="r5" value="0"/>Ignorar las nuevas tecnologías y esperar a que desaparezcan.<br/>
+                    <input type="radio" name="r5" id="r5" value="0"/>Enviar palomas mensajeras en lugar de usar correo electrónico.<br/><br/>
+            </ul>
+        </form>
+    </div>
+    <input type="button" value="Calificar" onclick="califica()">
+    <p id="puntajeContainer"></p> <!-- Contenedor para mostrar el puntaje -->
+    <input type="button" onclick="generar()" value="Ver resultados"/> <br/>
+    <iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+
+<script>
+var total;
+function califica() {
+    // Definir un objeto que mapee el nombre de la pregunta con la respuesta correcta
+    var respuestasCorrectas = {
+        'r1': '5',
+        'r2': '5',
+        'r3': '5',
+        'r4': '5',
+        'r5': '5'
+    };
+
+    // Obtener todas las respuestas seleccionadas
+    var respuestasSeleccionadas = document.querySelectorAll('input[type=radio]:checked');
+
+    // Contador para el puntaje
+    var puntaje = 0;
+
+    // Verificar cada respuesta seleccionada
+    respuestasSeleccionadas.forEach(function(respuesta) {
+        var nombrePregunta = respuesta.name; // Obtener el nombre de la pregunta
+        var valorRespuesta = respuesta.value; // Obtener el valor seleccionado por el usuario
+        
+        // Verificar si la respuesta seleccionada es correcta
+        if (valorRespuesta === respuestasCorrectas[nombrePregunta]) {
+            puntaje += 20; // Sumar 20 puntos por cada respuesta correcta
+        }
+    });
+
+    // Mostrar el puntaje en el contenedor
+    var puntajeContainer = document.getElementById('puntajeContainer');
+    puntajeContainer.innerHTML = 'Tu puntaje es: ' + puntaje + '%';
+
+    // Si todas las respuestas son correctas, mostrar mensaje adicional
+    if (puntaje === 100) {
+        puntajeContainer.innerHTML += '<p>¡Excelente! ¡Todas tus respuestas son correctas!</p>';
+    }
+}
+
+
+ 
+function generar() {
+    // Llamamos a la función califica para calcular el puntaje
+    califica();
+
+    // Obtenemos el contenido del contenedor de puntaje
+    var puntajeContainer = document.getElementById('puntajeContainer').innerHTML;
+
+    // Creamos un objeto o instancia jsPDF
+    var doc = new jsPDF();
+
+    //Definir el tamaño de la letra
+doc.setFontSize(40);
+//Color del texto
+doc.setTextColor(9, 7, 121);
+doc.text(40, 20, "Conceptos básicos");
+
+// Cambiar el color del texto y ajustar el tamaño de fuente para los resultados del test
+doc.setTextColor(17, 122, 209); //Color en formato RGB
+doc.setFontSize(30);
+doc.text(50, 35, "Resultados del test"); //Ubicación, Texto
+
+// Agregar el reconocimiento
+doc.setFontSize(14);
+doc.text("¡Felicitaciones!", 10, 90);
+doc.text("Por haber completado con éxito el test sobre Gemelos Digitales y Convergencia Digital.", 10, 100);
+doc.text("Tu compromiso con el aprendizaje y la exploración de nuevos conocimientos es inspirador.", 10, 110);
+doc.text("Esperamos que este test haya sido una experiencia educativa valiosa para ti.", 10, 120);
+doc.text("Gracias por tu dedicación y por visitar nuestra página.", 10, 130);
+doc.text("¡Te deseamos todo lo mejor en tus futuros proyectos y aventuras!", 10, 140);
+
+doc.setFontSize(20);
+doc.setTextColor(0, 0, 0);
+doc.text(10, 155, puntajeContainer);
+
+
+
+    // Generamos el documento PDF
+    var string = doc.output('datauristring');
+    $('iframe').attr('src', string);
+}
+</script>
+
+
+
+
+	<footer>
+		Derechos de autor © 2024 Edxxer. Todos los derechos reservados. Este sitio web y su contenido están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. Queda prohibida cualquier reproducción, distribución, o modificación, total o parcial, del contenido de este sitio web sin el consentimiento previo por escrito de [Nombre de tu empresa]. Para obtener más información sobre nuestros términos de uso y políticas de privacidad, por favor consulta los enlaces correspondientes en la parte inferior de la página.
+	</footer>
+</body>
+</html>
